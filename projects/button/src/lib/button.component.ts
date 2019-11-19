@@ -2,8 +2,9 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'lib-button',
+  styleUrls: ['./button.component.scss'],
   template: `
-    <button [disabled]="disabled">{{text}}</button>
+    <button [disabled]="disabled" class="upButton">{{text}}</button>
   `
 })
 export class ButtonComponent {
